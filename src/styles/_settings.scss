@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "font-1";
+    src: url(../assets/fonts/Montserrat.ttf);
+  }
+  
+  @mixin media-query($key) {
+    $size: map-get($breakpoints, $key);
+    @media only screen and (min-width: $size) {
+      @content;
+    }
+  }
+  
+  $font-1: "font-1", sans-serif;
+  
+  $color-1: #ff6060;
+  $color-2: #f7f7f7;
+  $color-3: black;
+  $white: #fff;
+  
+  $breakpoints: (
+    small: 350px,
+    medium: 768px,
+    large: 992px,
+    xlarge: 1200px,
+  );
+  
+  @mixin verticalCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    max-width: 1440px;
+    margin: auto;
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  
+  #root {
+    padding-bottom: 209px;
+  }
+  
+  li {
+    list-style-type: none;
+  }
