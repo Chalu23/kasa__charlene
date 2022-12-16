@@ -12,10 +12,13 @@
     }
     
     &__title {
-      line-height: 2;
-      margin: 0;
-      font-size: 18px;
+      font-family: Montserrat;
+      font-size: 36px;
       font-weight: 500;
+      line-height: 51px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin: 0;
       @include media-query(small) {
         font-size: 24px;
       }
@@ -44,7 +47,7 @@
       display: flex;
       flex-wrap: wrap;
       border-radius: 10px;
-      justify-content: space-between;
+      
       
     }
    

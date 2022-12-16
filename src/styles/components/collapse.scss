@@ -24,7 +24,13 @@
       cursor: pointer;
       position: relative;
       z-index: 1;
-  
+      font-family: Montserrat;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 34px;
+      letter-spacing: 0em;
+      text-align: left;
+      text-transform: capitalize;
       @include media-query(small) {
         height: 38px;
       }
@@ -38,15 +44,16 @@
     }
   
     &__arrow {
-      margin-right: 1rem;
+      
       pointer-events: none;
       transform: rotate(90deg);
       transition: transform 300ms;
       transform-origin: bottom -25%;
-      translate: -50% -50%;
-  
+      margin: 2px;
+      font-size: x-large;
       @include media-query(medium) {
         height: 13px;
+    
       }
       @include media-query(large) {
         height: 17px;

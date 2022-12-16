@@ -7,22 +7,20 @@
     animation: Progress 600ms ease-in-out;
     overflow: hidden;
     margin-left: 20px;
-  
+    
     &__img {
-      
       object-fit: cover;
-      
       transform: scale(1);
       transition: transform 300ms;
       height: 255px;
       width: 335px;
-      left: 0px;
-      top: 0px;
+      
       border-radius: 10px;
 
     }
   
     &__title {
+      font-family: Montserrat,sans-serif;
       position: absolute;
       bottom: 0;
       font-size: 18px;
@@ -30,15 +28,17 @@
       margin: 15px 20px;
       color: $white;
       box-sizing: inherit;
+      width: 80%;
     }
   
     &__overlay {
       position: absolute;
       top: 0;
       background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
-      height: 100%;
-      width:335px;
+      height: 255px;
+      width:334px;
       border-radius: inherit;
+     
     }
     &:hover {
       > .card__logement__img {

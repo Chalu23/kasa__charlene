@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Apropos from "./pages/Apropos";
+import Apropos from "./pages/aPropos";
 import FicheLogement from "./pages/FicheLogement";
 import ErrorPage from "./pages/ErrorPage";
 import Footer from "./components/Footer";
@@ -16,7 +16,7 @@ const App = () => {
         {/* path="*" permet de renvoyé vers la page 404 
        */}
         <Route path="*" element={<ErrorPage />} />
-        <Route path="/Apropos" element={<Apropos/>} />
+        <Route path="/apropos" element={<Apropos/>} />
         <Route path="products/:productId" element={<FicheLogement />} />
       </Routes>
       <Footer />

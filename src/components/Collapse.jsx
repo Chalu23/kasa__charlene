@@ -1,6 +1,7 @@
 import React from "react";
+import vector from "../assets/img/Vector-1.png";
 
-const Collapse = ({ title, content }) => {
+const Collapse = ({ title, content}) => {
   const isCollapse = (e) => {
     e.preventDefault();
     const divText = e.target.nextSibling;
@@ -19,7 +20,9 @@ const Collapse = ({ title, content }) => {
       <button type="button" className="collapse__button" onClick={isCollapse}>
         {title}
 
-        <p className="collapse__arrow">&lt;</p>
+        <p className="collapse__arrow">
+          <img src={vector} alt="" className="collapse__arrow" />
+        </p>
       </button>
       <div className="collapse__content">
         {Array.isArray(content) ? (
