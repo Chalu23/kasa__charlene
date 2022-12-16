@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.49d02e9b.css",
+    "main.js": "/static/js/main.86f365a9.js",
+    "static/media/aboutbannerDesktop.png": "/static/media/aboutbannerDesktop.0ee601e6c61621f7de50.png",
+    "static/media/banner.png": "/static/media/banner.024f945a990ae17b81b7.png",
+    "static/media/logo.svg": "/static/media/logo.a6101328193bb3191cbcb50c120ec0d1.svg",
+    "index.html": "/index.html",
+    "static/media/arrowRight.svg": "/static/media/arrowRight.88153a5d119c2744ffe34dca1ef843df.svg",
+    "static/media/arrowLeft.svg": "/static/media/arrowLeft.19918a1634b1441a25ae0b50e6b1f85b.svg",
+    "static/media/greyStar.svg": "/static/media/greyStar.38752bcafc1045fa6b545169fb0eb2eb.svg",
+    "static/media/redStar.svg": "/static/media/redStar.a21f8abfc51a23975832b769119429bd.svg",
+    "static/media/Montserrat.ttf": "/static/media/Montserrat.02a68d91270ba73604b4.ttf",
+    "main.49d02e9b.css.map": "/static/css/main.49d02e9b.css.map",
+    "main.86f365a9.js.map": "/static/js/main.86f365a9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49d02e9b.css",
+    "static/js/main.86f365a9.js"
+  ]
+}
