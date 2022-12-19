@@ -1,0 +1,181 @@
+.grey {
+  color: #999;
+  font-size: 30px;
+}
+
+.red {
+  color: #ff6060;
+  font-size: 30px;
+}
+
+.product_page {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.product_equipments {
+  gap: 0 75px;
+  display: inline-flex;
+  line-height: 22.5px;
+  list-style: none;
+  width: 100%;
+}
+
+.product_equipments > .collapse {
+  width: 50%;
+}
+
+.product_content {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product_tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product_starshost {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.product_stars {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.product_informations {
+  display: flex;
+  flex-direction: column;
+}
+.product_title {
+  color: #ff6060;
+  font-weight: 500;
+  font-size: 36px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.product_location {
+  color: #ff6060;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+ol {
+  padding: 0;
+}
+/* MOBILE */
+@media (max-width: 768px) {
+  .product_page {
+    margin-top: 2rem;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .product_title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .product_location {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+  }
+  .product_content {
+    flex-direction: column;
+  }
+  .product_tags {
+    margin-top: 1rem;
+  }
+  .product_equipments {
+    flex-direction: column;
+  }
+  .product_equipments > .collapse {
+    width: 100%;
+  }
+
+  .product_informations {
+    width: 100%;
+  }
+  .product_starshost {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin: 0;
+  }
+  .red {
+    font-size: 15px;
+  }
+  .grey {
+    font-size: 15px;
+  }
+}
+
+/* TABLETTE */
+@media screen and (max-width: 992px) and (min-width: 769px) {
+  .product_page {
+    margin-top: 2rem;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .product_title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .product_location {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+  }
+  .product_content {
+    flex-direction: column;
+  }
+  .product_tags {
+    margin-top: 1rem;
+  }
+  .product_equipments {
+    flex-direction: column;
+  }
+  .product_equipments > .collapse {
+    width: 100%;
+  }
+
+  .product_informations {
+    width: 100%;
+  }
+  .product_starshost {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin: 0;
+  }
+
+  .red {
+    font-size: 20px;
+  }
+  .grey {
+    font-size: 20px;
+  }
+}

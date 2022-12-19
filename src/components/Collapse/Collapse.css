@@ -1,0 +1,119 @@
+.collapse {
+  border-radius: 5px;
+  margin-top: 31px;
+  text-align: left;
+}
+.collapse_header {
+  align-items: center;
+  background-color: #ff6060;
+  border-radius: 9px;
+  display: inline-flex;
+  height: 47px;
+  min-height: 47px;
+  width: 100%;
+}
+
+.collapse_title {
+  color: #ffffff;
+  height: 50px;
+  line-height: 50px;
+  margin: 5px 10px;
+  font-size: 24px;
+  font-weight: 500;
+  
+}
+
+.collapse_arrow {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  width: 100%;
+}
+.collapse_arrow:hover {
+  cursor: pointer;
+}
+
+.collapse_arrow.true {
+  justify-content: start;
+  transform: rotate(-180deg);
+}
+
+.collapse_description {
+  background-color: #f6f6f6;
+  border-radius: 0 0 5px 5px;
+  color: #ff6060;
+  height: auto;
+  margin-top: -10px;
+  /* décaler le bloc de texte en dessous du titre */
+  /* min-height: 100px; */
+  font-size: 18px;
+  font-weight: 400;
+  padding: 43px 12px 10px 20px;
+ 
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  .collapse_description {
+    padding: 23.02px 6.91px 10px 11.51px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .collapse_header {
+    height: 29.93px;
+    min-height: 29.93px;
+  }
+  .collapse_arrow {
+    height: 29.93px;
+  }
+  .collapse_title {
+    font-size: 13px;
+    font-weight: 500;
+    text-align: left;
+  }
+  .collapse_arrow > img {
+    margin-right: 0px;
+    width: 8.96px;
+  }
+  .collapse {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+/* TABLETTE */
+@media screen and (max-width: 992px) and (min-width: 769px) {
+  .collapse_description {
+    padding: 23.02px 6.91px 10px 11.51px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .collapse_header {
+    height: 45px;
+    min-height: 45px;
+  }
+  .collapse_arrow {
+    height: 29.93px;
+  }
+  .collapse_title {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+  }
+  .collapse_arrow > img {
+    margin-right: 0px;
+    width: 15px;
+  }
+  .collapse {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+}

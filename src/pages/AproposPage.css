@@ -1,0 +1,35 @@
+.about_page {
+  margin-top: 49.37px;
+  margin-bottom: 80px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.about_dropdowns {
+  margin-left: 108px;
+  margin-right: 109px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .about_page {
+    margin: 17px 20px 29px 20px;
+  }
+  .about_dropdowns {
+    margin-top: 19px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+/* TABLETTE  */
+@media screen and (max-width: 992px) and (min-width: 769px) {
+  .about_page {
+    margin: 17px 20px 29px 20px;
+  }
+  .about_dropdowns {
+    margin-top: 19px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}

@@ -1,0 +1,82 @@
+.banner {
+  border-radius: 25px;
+  position: relative;
+  height: 200px;
+  animation: fadeIn 500ms ease-in-out;
+}
+
+.banner_text {
+  font-size: 48px;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.banner_img {
+  border-radius: inherit;
+  
+  width: 100%;
+  height: 100%;
+}
+
+.banner_overlay {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  border-radius: 23px;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+}
+
+.banner_text {
+  position: absolute;
+  top: 0;
+  color: white;
+  margin: 0;
+  padding-left: 16px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 68px;
+}
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  .banner_text {
+    font-size: 24px;
+    align-items: center;
+    justify-content: flex-start;
+    line-height: 27px;
+  }
+  .homepage .banner {
+    height: 111px;
+  }
+}
+
+/* TABLETTE */
+@media screen and (max-width: 992px) and (min-width: 769px) {
+  .banner_text {
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    line-height: 27px;
+  }
+  .homepage .banner {
+    height: 111px;
+  }
+}
+
+/* animation apparition banner */
+@keyframes fadeIn {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}

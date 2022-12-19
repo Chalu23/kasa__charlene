@@ -1,0 +1,26 @@
+.banner {
+  height: 223px;
+  background-image: url("../assets/img/banner.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  mix-blend-mode: darken;
+  
+}
+
+.homepage {
+  margin: 50px 100px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  .homepage {
+    margin: 16px 20px 0 20px;
+  }
+}
+
+/* TABLETTE */
+@media screen and (max-width: 992px) and (min-width: 769px) {
+  .homepage {
+    margin: 16px 20px 0 20px;
+  }
+}
