@@ -1,16 +1,16 @@
-.contact {
+.host {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 10px 0 24px 0;
 }
 
-.contact_picture {
+.host_picture {
   width: 64px;
   height: 64px;
   border-radius: 50%;
 }
-.contact_name {
+.host_name {
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 0em;
@@ -19,23 +19,23 @@
   color: #ff6060;
 }
 
-.contact_firstname {
+.host_firstname {
   margin-bottom: 5px;
 }
-.contact_lastname {
+.host_lastname {
   margin-top: 5px;
 }
 
 /* MOBILE */
 @media screen and (max-width: 768px) {
-  .contact {
+  .host {
     padding: 0;
   }
-  .contact_picture {
+  .host_picture {
     width: 32px;
     height: 32px;
   }
-  .contact_name {
+  .host_name {
     font-family: 'montserrat';
     font-size: 12px;
     font-weight: 500;
@@ -47,12 +47,12 @@
 
 /* TABLETTE */
 @media screen and (max-width: 992px) and (min-width: 769px) {
-  .contact_picture {
+  .host_picture {
     width: 48px;
     height: 48px;
   }
 
-  .contact_name {
+  .host_name {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0em;

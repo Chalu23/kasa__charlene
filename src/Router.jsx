@@ -8,7 +8,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-// data for about page
+// données pour la page A propos
 import about from "./datas/about.json";
 function router() {
   return (

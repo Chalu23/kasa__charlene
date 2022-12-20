@@ -3,7 +3,7 @@ import logoFooter from "../../assets/img/logoFooter.png";
 
 function Footer() {
   // récupération de l'année en cours
-  const actualYear = new Date().getFullYear();
+  const actualYear = new Date().getFullYear();//La getFullYear()méthode renvoie l'année de la date spécifiée en fonction de l'heure locale.
   return (
     <footer>
       <div className="footer_container">

@@ -1,11 +1,11 @@
-.gallery_image > img {
+.carrousel_image > img {
   width: 100%;
   height: 25rem;
   object-fit: cover;
   border-radius: 25px;
 }
-/* message when no image exist */
-.gallery_displayNoImage {
+/*message si pas d'image  */
+.carrousel_displayNoImage {
   width: 100%;
   height: 25rem;
   background-color: #f7f7f7;
@@ -19,11 +19,11 @@
   margin-bottom: 30px;
 }
 
-.gallery_image {
+.carrousel_image {
   position: relative;
 }
-/* counter */
-.gallery_count {
+/* count */
+.carrousel_count {
   font-size: 18px;
   font-weight: 500;
   color: #ffffff;
@@ -33,20 +33,20 @@
   position: absolute;
 }
 /* arrows */
-.gallery_arrowLeft {
+.carrousel_arrowLeft {
   position: absolute;
   left: 13px;
   top: 44%;
   cursor: pointer;
 }
-.gallery_arrowRight {
+.carrousel_arrowRight {
   position: absolute;
   right: 13px;
   top: 44%;
   cursor: pointer;
 }
-.gallery_arrowLeft img,
-.gallery_arrowRight img {
+.carrousel_arrowLeft img,
+.carrousel_arrowRight img {
   width: 45px;
 }
 

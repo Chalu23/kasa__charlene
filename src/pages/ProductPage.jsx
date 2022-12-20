@@ -2,35 +2,27 @@ import { Navigate, useParams } from "react-router-dom";
 // components
 import Collapse from "../components/Collapse/Collapse";
 import Products from "../datas/records.json";
-// import Carrousel from "../../components/Gallery/Gallery";
-import Gallery from "../components/Gallery/Gallery";
+import Carrousel from "../components/Carrousel/Carrousel";
 import { Star } from "../components/Star/Star";
 import Tags from "../components/Tags/Tags";
-import Contact from "../components/Contact/Contact";
+import Host from "../components/Host/Host";
 // css
 import "./ProductPage.css";
 
+
 function ProductPage() {
-  const { id } = useParams();
+  const { id } = useParams();// on recupere les données 
   const product = Products.find((product) => product.id === id);
-  console.log("product",product)
+  console.log("product",product) // si id est mauvais on retourne sur la page erreur 
   if (!product) {
     return <Navigate to="/404" />;
   }
 
-  const {
-    equipments,
-    description,
-    rating,
-    pictures,
-    tags,
-    host,
-    title,
-    location,
-  } = product;
+  const {equipments,description,rating,pictures,tags,host,title,location, } = product;
+
   const stars = [1, 2, 3, 4, 5].map((n) => (
     <Star key={n} selected={n <= Number(rating)} />
-    // compare n to rating and cast rating to number
+    // on compare n à la note et la note de distribution au nombre 
   ));
   const equipementsLogement = equipments.map((equipment, index) => {
     return <li key={index}>{equipment}</li>;
@@ -39,7 +31,7 @@ function ProductPage() {
   return (
     <>
       <div className="product_page">
-        <Gallery pictures={pictures} />
+        <Carrousel pictures={pictures} />
         <div className="product_content">
           <div className="product_informations">
             <h1 className="product_title">{title}</h1>
@@ -51,7 +43,7 @@ function ProductPage() {
             </div>
           </div>
           <div className="product_starshost">
-            <Contact host={host} />
+            <Host host={host} />
             <div className="product_stars">{stars}</div>
           </div>
         </div>
