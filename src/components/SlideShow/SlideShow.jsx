@@ -2,9 +2,9 @@ import React from "react";
 import { useState } from "react";
 import arrowLeft from "../../assets/img/arrowLeft.svg";
 import arrowRight from "../../assets/img/arrowRight.svg";
-import "../../components/Carrousel/carrousel.css";
+import "../../components/SlideShow/SlideShow.css";
 
-function Carrousel({ pictures }) {
+function SlideShow({ pictures }) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const length = pictures.length;
   // fonctions pour changer de slide avec les flèches
@@ -16,25 +16,25 @@ function Carrousel({ pictures }) {
   };
   // si pas de slide, on affiche un message
   if (!pictures || length === 0) {
-    return <div className="carrousel_displayNoImage">Image non disponible</div>;
+    return <div className="silde_displayNoImage">Image non disponible</div>;
   }
   return (
     <>
       {pictures.map(
         (picture, index) =>
           currentSlide === index && (
-            <div key={picture} className="carrousel_image">
-              <span className="carrousel_count">
+            <div key={picture} className="slide_image">
+              <span className="slide_count">
                 {index + 1}/{length}
               </span>
               <img src={picture} alt="appartement" />
               {length > 1 ? (
                 // si il y a plus d'une image, on affiche les boutons, si il n'y à pas d'images pas de boutons 
                 <>
-                  <div className="carrousel_arrowLeft" onClick={prevSlide}>
+                  <div className="slide_arrowLeft" onClick={prevSlide}>
                     <img src={arrowLeft} alt="arrow preview" />
                   </div>
-                  <div className="carrousel_arrowRight" onClick={nextSlide}>
+                  <div className="slide_arrowRight" onClick={nextSlide}>
                     <img src={arrowRight} alt="arrow next" />
                   </div>
                 </>
@@ -46,4 +46,4 @@ function Carrousel({ pictures }) {
   );
 }
 
-export default Carrousel
+export default SlideShow

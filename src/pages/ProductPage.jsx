@@ -2,7 +2,7 @@ import { Navigate, useParams } from "react-router-dom";
 // components
 import Collapse from "../components/Collapse/Collapse";
 import Products from "../datas/records.json";
-import Carrousel from "../components/Carrousel/Carrousel";
+import SlideShow from "../components/SlideShow/SlideShow";
 import { Star } from "../components/Star/Star";
 import Tags from "../components/Tags/Tags";
 import Host from "../components/Host/Host";
@@ -31,7 +31,7 @@ function ProductPage() {
   return (
     <>
       <div className="product_page">
-        <Carrousel pictures={pictures} />
+        <SlideShow pictures={pictures} />
         <div className="product_content">
           <div className="product_informations">
             <h1 className="product_title">{title}</h1>
