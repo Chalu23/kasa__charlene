@@ -17,6 +17,7 @@
   text-align: right;
   margin-right: 10px;
   color: #ff6060;
+  line-height: 10px;
 }
 
 .host_firstname {
@@ -39,7 +40,6 @@
     font-family: 'montserrat';
     font-size: 12px;
     font-weight: 500;
-    line-height: 17px;
     letter-spacing: 0em;
     text-align: right;
   }
@@ -57,5 +57,6 @@
     line-height: 20px;
     letter-spacing: 0em;
     text-align: right;
+
   }
 }
