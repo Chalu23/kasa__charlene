@@ -13,7 +13,7 @@ import "./ProductPage.css";
 function ProductPage() {
   const { id } = useParams();// on recupere les données 
   const product = Products.find((product) => product.id === id);
-  console.log("product",product) // si id est mauvais on retourne sur la page erreur 
+   // si id est mauvais on retourne sur la page erreur 
   if (!product) {
     return <Navigate to="/404" />;
   }
