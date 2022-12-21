@@ -70,16 +70,16 @@
 
 /* TABLETTE */
 @media screen and (max-width: 992px) and (min-width: 769px) {
-  .gallery_arrowLeft img,
-  .gallery_arrowRight img {
+  .slide_arrowLeft img,
+  .slide_arrowRight img {
     width: 16px;
   }
 
-  .gallery_count {
+  .slide_count {
     font-size: 18px;
   }
 
-  .gallery_image > img {
+  .slide_image > img {
     height: 255px;
     border-radius: 10px;
   }
