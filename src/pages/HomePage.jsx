@@ -8,10 +8,10 @@ function HomePage() {
   const slogan = "Chez vous, partout et ailleurs";
   return (
     <main className="homepage">
-      <Banner image={bannerHome} text={slogan} />
-      <CardsContainer />
+    <Banner image={bannerHome} text={slogan} />
+    <CardsContainer />
     </main>
-  );
-}
+    );
+  }
 
 export default HomePage;

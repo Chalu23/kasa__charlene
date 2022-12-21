@@ -9,15 +9,15 @@ import Header from "./components/Header/Header";
 function App() {
   return (
     <div>
-      <div className="appPageContainer">
-        <Header />
-        <div className="routerFormat">
-          <Routeur />
-        </div>
-      </div>
-      <Footer />
+    <div className="appPageContainer">
+    <Header />
+    <div className="routerFormat">
+    <Routeur />
     </div>
-  );
-}
-
-export default App;
+    </div>
+    <Footer />
+    </div>
+    );
+  }
+  
+  export default App;

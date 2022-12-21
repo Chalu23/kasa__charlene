@@ -1,11 +1,12 @@
-.carrousel_image > img {
+.slide_image > img {
   width: 100%;
   height: 25rem;
   object-fit: cover;
   border-radius: 25px;
+  
 }
 /*message si pas d'image  */
-.carrousel_displayNoImage {
+.slide_displayNoImage {
   width: 100%;
   height: 25rem;
   background-color: #f7f7f7;
@@ -19,11 +20,11 @@
   margin-bottom: 30px;
 }
 
-.carrousel_image {
+.slide_image {
   position: relative;
 }
 /* count */
-.carrousel_count {
+.slide_count {
   font-size: 18px;
   font-weight: 500;
   color: #ffffff;
@@ -33,35 +34,35 @@
   position: absolute;
 }
 /* arrows */
-.carrousel_arrowLeft {
+.slide_arrowLeft {
   position: absolute;
   left: 13px;
   top: 44%;
   cursor: pointer;
 }
-.carrousel_arrowRight {
+.slide_arrowRight {
   position: absolute;
   right: 13px;
   top: 44%;
   cursor: pointer;
 }
-.carrousel_arrowLeft img,
-.carrousel_arrowRight img {
+.slide_arrowLeft img,
+.slide_arrowRight img {
   width: 45px;
 }
 
 /* MOBILE */
 @media screen and (max-width: 768px) {
-  .gallery_arrowLeft img,
-  .gallery_arrowRight img {
+  .slide_arrowLeft img,
+  .slide_arrowRight img {
     width: 11.67px;
   }
 
-  .gallery_count {
+  .slide_count {
     font-size: 15px;
   }
 
-  .gallery_image > img {
+  .slide_image > img {
     height: 255px;
     border-radius: 10px;
   }
