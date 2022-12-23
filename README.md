@@ -10,7 +10,7 @@ Maquette du projet dispsonible en cliquant ici
 https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=4%3A1&t=HGIrhSsTxnfnM1Zi-0
 
 
-Lancement du projet NPM START 
+Lancement du projet NPM START dans le sous-dossier kasa 
  http://localhost:3000
 
 
