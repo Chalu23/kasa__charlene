@@ -1,5 +1,5 @@
 import "./Footer.css";
-import logoFooter from "../../assets/img/logoFooter.png";
+import logoFooter from "../../assets/img/logofooter.png";
 
 function Footer() {
   // récupération de l'année en cours
